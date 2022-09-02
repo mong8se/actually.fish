@@ -15,7 +15,7 @@ function _actually --on-event fish_postexec
   # to get it to work automatically when inside a variable from a split string
   set -f last_dir (path dirname $last_cmd[2] | string replace -r '^~' "$HOME")
   set -f last_base (path basename $last_cmd[2])
-  set -l list (command find "$last_dir" -maxdepth 1 -mindepth 1 -name "$last_base"'*' | path sort)
+  set -l list (command find "$last_dir" -maxdepth 1 -mindepth 1 -iname "$last_base"'*' | path sort)
 
   if test -z "$list"
     return $last_status
@@ -49,6 +49,7 @@ function _actually --on-event fish_postexec
   end
 
   if test -d "$destination"
+    echo $destination
     cd $destination
   else
     echo nevermind
