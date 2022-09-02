@@ -45,13 +45,20 @@ Ain't none.
 
 ## Dependencies?
 
-Hard dependency on `find` . 
+Hard dependency on `find` command.
 
-Soft dependency on `fzf` (if you don't have it, it'll fall back to a
+Soft dependency on [fzf](https://github.com/junegunn/fzf) (if you don't have it, it'll fall back to a
 fish `read` prompt)
 
-Even softer on `lsd` (if you have fzf, it'll preview the directories
+Even softer on [lsd](https://github.com/Peltoche/lsd) (if you have fzf, it'll preview the directories
 with `lsd` if you have it but fallback to `ls` if not)
+
+## Also
+
+If you like this you might also like
+[actually.nvim](https://github.com/mong8se/actually.nvim) which is the
+same concept but for opening files in nvim from the command line.
+
 
 TODO: Cleanup
 TODO: Windows Operating System!?
