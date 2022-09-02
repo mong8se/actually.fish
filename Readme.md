@@ -31,6 +31,8 @@ matches)
 
 But don't worry, you can cancel if none of it is what you wanted.
 
+![a demo of the plugin in action](https://i.imgur.com/Alvjz3R.gif)
+
 ## How I install?
 
 The regular way.
